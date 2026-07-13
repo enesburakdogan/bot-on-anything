@@ -1,0 +1,65 @@
+{
+  "interval_seconds": 300,
+  "state_db": "./housing_bot/state.db",
+  "skip_existing_on_first_run": true,
+  "model_config": "./config.json",
+
+  "search": {
+    "max_rent": 1500,
+    "min_rent": 0,
+    "min_rooms": 2,
+    "max_rooms": 0,
+    "min_size": 50,
+    "districts": ["Neukölln", "Kreuzberg", "Friedrichshain", "Mitte", "Prenzlauer Berg", "Wedding"],
+    "exclude_keywords": ["tausch", "zwischenmiete", "untermiete", "auf zeit", "sublet", "ferienwohnung", "wbs"]
+  },
+
+  "sites": {
+    "wg_gesucht": {
+      "enabled": true,
+      "search_urls": [
+        "https://www.wg-gesucht.de/wohnungen-in-Berlin.8.2.1.0.html"
+      ],
+      "email": "",
+      "password": ""
+    },
+    "kleinanzeigen": {
+      "enabled": true,
+      "search_urls": [
+        "https://www.kleinanzeigen.de/s-wohnung-mieten/anzeige:angebote/berlin/c203l3331"
+      ],
+      "cookies": "",
+      "contact": {
+        "contactFirstName": "",
+        "contactLastName": "",
+        "phoneNumber": ""
+      }
+    }
+  },
+
+  "apply": {
+    "enabled": true,
+    "dry_run": true,
+    "max_per_hour": 8,
+    "delay_seconds": [20, 90],
+    "applicant": {
+      "name": "",
+      "occupation": "Softwareentwickler",
+      "phone": "",
+      "email": "",
+      "about": ""
+    },
+    "message_template": "",
+    "ai": {
+      "enabled": false
+    }
+  },
+
+  "notify": {
+    "telegram": {
+      "enabled": false,
+      "bot_token": "",
+      "chat_id": ""
+    }
+  }
+}
