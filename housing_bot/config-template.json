@@ -11,7 +11,7 @@
     "max_rooms": 0,
     "min_size": 50,
     "districts": ["Neukölln", "Kreuzberg", "Friedrichshain", "Mitte", "Prenzlauer Berg", "Wedding"],
-    "exclude_keywords": ["tausch", "zwischenmiete", "untermiete", "möbliert auf zeit"]
+    "exclude_keywords": ["tausch", "zwischenmiete", "untermiete", "auf zeit", "sublet", "ferienwohnung", "wbs"]
   },
 
   "sites": {
